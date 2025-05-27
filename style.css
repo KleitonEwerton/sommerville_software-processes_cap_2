@@ -1,0 +1,104 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.sidebar {
+  width: 280px;
+}
+
+.content-area {
+  margin-left: 280px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .content-area {
+    margin-left: 0;
+  }
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-button.active + .accordion-content {
+  display: block;
+}
+
+.diagram-box {
+  border: 1px solid #9ca3af;
+  /* gray-400 */
+  padding: 0.75rem;
+  /* p-3 */
+  margin: 0.5rem;
+  /* m-2 */
+  border-radius: 0.375rem;
+  /* rounded-md */
+  background-color: #f9fafb;
+  /* gray-50 */
+  text-align: center;
+  min-width: 120px;
+}
+
+.diagram-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  /* text-2xl */
+  margin: 0 0.25rem;
+  /* mx-1 */
+  color: #374151;
+  /* gray-700 */
+}
+
+.diagram-connector-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diagram-connector-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  /* Tailwind max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  /* Tailwind h-96 is 384px, this is a bit more */
+  max-height: 450px;
+}
+
+/* Custom scrollbar for content area if needed */
+.main-content-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-content-scrollable::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  /* slate-100 */
+}
+
+.main-content-scrollable::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  /* slate-400 */
+  border-radius: 4px;
+}
+
+.main-content-scrollable::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+  /* slate-500 */
+}
