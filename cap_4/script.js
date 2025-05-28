@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 id: "processo-er",
-                title: "3, Processo de Engenharia de Requisitos",
+                title: "3. Processo de Engenharia de Requisitos",
                 intro: "A engenharia de requisitos é um processo iterativo no qual as atividades são entrelaçadas. As principais atividades são elicitação, especificação e validação, organizadas em um ciclo contínuo para refinar a compreensão dos requisitos.",
                 subsections: [
                     {
