@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Interativa: Processos de Software (Sommerville Cap. 2)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-stone-50 text-stone-700">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <aside class="sidebar bg-stone-200 p-4 md:fixed md:h-full shadow-lg">
+            
+            <h1 class="text-2xl font-bold text-teal-700 mb-6 border-b-2 border-teal-600 pb-2">Processos de Software</h1>
+            <nav>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#"
+                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
+                            data-section="conceito">1. Conceito de Processo</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
+                            data-section="modelos">2. Modelos de Processo</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
+                            data-section="atividades">3. Atividades do Processo</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
+                            data-section="mudanca">4. Lidando com a Mudança</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
+                            data-section="melhoria">5. Melhoria de Processos</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="content-area" class="content-area flex-1 p-6 md:p-10 overflow-y-auto main-content-scrollable"
+            style="max-height: 100vh;">
+        </main>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+body {
+    font-family: 'Inter', sans-serif, system-ui;
+}
+
+#sidebar {
+    width: 280px;
+}
+
+.main-content-scrollable {
+    margin-left: 280px;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    .main-content-scrollable {
+        margin-left: 0;
+    }
+}
+
+.accordion-content {
+    display: none;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb; /* stone-200 */
+}
+
+.accordion-button.active + .accordion-content {
+    display: block;
+}
+
+.diagram-box {
+    border: 1px solid #9ca3af; /* gray-400 */
+    padding: 0.75rem;
+    margin: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: #f9fafb; /* gray-50 */
+    text-align: center;
+    min-width: 120px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.diagram-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 0.25rem;
+    color: #374151; /* gray-700 */
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    max-height: 450px;
+}
+
+/* Tree Diagram for Non-Functional Requirements */
+.tree ul {
+    position: relative;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.tree li {
+    position: relative;
+    padding: 4px 0 4px 20px;
+}
+
+/* Linhas do conector */
+.tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    border-color: #9ca3af; /* gray-400 */
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+}
+
+/* Linha vertical */
+.tree ul::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #9ca3af;
+}
+
+/* Linha horizontal para cada item */
+.tree li::before {
+    top: 50%;
+    height: 1px;
+    width: 15px;
+    transform: translateY(-1px);
+}
+
+/* Conecta o último item à linha vertical */
+.tree li:last-child::after {
+    height: 50%;
+    top: 0;
+    bottom: auto;
+}
+
+/* Remove a linha vertical que se estende abaixo do último item */
+.tree li:last-child::before {
+    border-bottom-left-radius: 5px;
+}
+.tree li:last-child {
+    padding-bottom: 0;
+}

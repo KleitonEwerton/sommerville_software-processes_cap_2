@@ -4,44 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPA Interativa: Processos de Software (Sommerville Cap. 2)</title>
+    <title>Resumo Interativo - Engenharia de Software (Sommerville)</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css">
-    
+    <style>
+        /* Estilos personalizados para o card e link */
+        .chapter-card-link {
+            text-decoration: none;
+        }
+
+        .chapter-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            height: 100%;
+        }
+
+    </style>
 </head>
 
 <body class="bg-stone-50 text-stone-700">
-    <div class="flex flex-col md:flex-row min-h-screen">
-        <aside class="sidebar bg-stone-200 p-4 md:fixed md:h-full shadow-lg">
-            <h1 class="text-2xl font-bold text-teal-700 mb-6 border-b-2 border-teal-600 pb-2">Processos de Software</h1>
-            <nav>
-                <ul class="space-y-2">
-                    <li><a href="#"
-                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
-                            data-section="conceito">1. Conceito de Processo</a></li>
-                    <li><a href="#"
-                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
-                            data-section="modelos">2. Modelos de Processo</a></li>
-                    <li><a href="#"
-                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
-                            data-section="atividades">3. Atividades do Processo</a></li>
-                    <li><a href="#"
-                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
-                            data-section="mudanca">4. Lidando com a Mudança</a></li>
-                    <li><a href="#"
-                            class="nav-link text-stone-700 hover:text-teal-600 hover:bg-stone-300 block p-2 rounded-md transition-colors duration-150"
-                            data-section="melhoria">5. Melhoria de Processos</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <div class="container mx-auto p-6 md:p-10">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-700">Engenharia de Software de Sommerville</h1>
+            <p class="text-lg text-stone-600 mt-2">Resumos interativos dos capítulos</p>
+            <p class="text-sm text-stone-500 mt-1">Baseado na 10ª edição do livro</p>
+            <p class="text-sm text-stone-500 mt-1">Desenvolvido por <a href="https://github.com/agatameireles11"
+                    class="text-teal-600 hover:underline">Ágata Meireles</a> e <a
+                    href="https://github.com/KleitonEwerton" class="text-teal-600 hover:underline">Kleiton Ewerton</a>
+            </p>
+            <p class="text-sm text-stone-500 mt-1">Revisado por <a href="https://gemini.google.com/app?hl=pt-PT"
+                    class="text-teal-600 hover:underline">Google
+                    Gemini</a></p>
 
-        <main id="content-area" class="content-area flex-1 p-6 md:p-10 overflow-y-auto main-content-scrollable"
-            style="max-height: 100vh;">
+        </header>
+
+        <main>
+            <h2 class="text-2xl font-bold text-stone-800 mb-6 border-b-2 border-stone-300 pb-2">Capítulos Disponíveis
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <a href="cap_2/index.html" class="chapter-card-link">
+                    <div class="chapter-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl font-bold text-teal-600 mr-4">2</span>
+                            <h3 class="text-xl font-semibold text-teal-800">Processos de Software</h3>
+                        </div>
+                        <p class="text-stone-600">
+                            Uma exploração dos modelos de processo, atividades fundamentais e estratégias para lidar com
+                            mudanças no ciclo de vida do software.
+                        </p>
+                        <span class="block text-right mt-4 text-sm font-semibold text-teal-600">Ver Resumo →</span>
+                    </div>
+                </a>
+
+                <div class="chapter-card-link cursor-not-allowed">
+                    <div class="chapter-card bg-white p-6 rounded-lg shadow-lg opacity-50">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl font-bold text-stone-400 mr-4">3</span>
+                            <h3 class="text-xl font-semibold text-stone-500">Desenvolvimento Ágil</h3>
+                        </div>
+                        <p class="text-stone-500">
+                            Foco em métodos ágeis, planejamento incremental, e a entrega rápida de software funcional em
+                            resposta às mudanças nos requisitos.
+                        </p>
+                        <span class="block text-right mt-4 text-sm font-semibold text-stone-400">Em Breve</span>
+                    </div>
+                </div>
+                
+                <a href="cap_4/index.html" class="chapter-card-link">
+                    <div class="chapter-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl font-bold text-teal-600 mr-4">4</span>
+                            <h3 class="text-xl font-semibold text-teal-800">Engenharia de Requisitos</h3>
+                        </div>
+                        <p class="text-stone-600">
+                            O processo de descobrir, analisar, documentar e validar os serviços e restrições de
+                            um sistema de software.
+                        </p>
+                        <span class="block text-right mt-4 text-sm font-semibold text-teal-600">Ver Resumo →</span>
+                    </div>
+                </a>
+
+            </div>
         </main>
     </div>
-    <script src="script.js"></script>
-
 </body>
 
 </html>
