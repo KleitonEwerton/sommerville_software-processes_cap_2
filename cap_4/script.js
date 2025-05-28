@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 id: "validacao-mudanca",
-                title: "4. Validação e Mudança",
+                title: "5. Validação e Mudança",
                 intro: "Após a especificação, os requisitos devem ser validados para garantir que definem o sistema desejado pelo cliente. Além disso, é preciso ter um processo robusto para gerenciar as mudanças que inevitavelmente ocorrem ao longo do ciclo de vida do projeto.",
                 subsections: [
                     {
